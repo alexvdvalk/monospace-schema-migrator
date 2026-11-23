@@ -1,0 +1,21 @@
+{
+  "name": "hotels-scripts",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "migrate:extract": "bun src/migrate/extract.ts",
+    "migrate:apply": "bun src/migrate/apply.ts",
+    "build": "bun build src/index.ts --outdir dist --target bun",
+    "typecheck": "bun check"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^7"
+  },
+  "dependencies": {
+    "@clack/prompts": "^1.9.0"
+  }
+}
